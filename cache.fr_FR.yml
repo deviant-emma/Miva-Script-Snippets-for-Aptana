@@ -1,0 +1,311 @@
+!!com.aptana.scripting.model.BundleElement
+author: Emma Bischoff
+children:
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children: &id001 []
+    commandName: Meee
+    customProperties: null
+    displayName: Meee
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Swap Case
+    customProperties: null
+    displayName: Swap Case
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Sample Snippet
+      customProperties: null
+      displayName: Sample Snippet
+      path: bundle.rb
+      scope: null
+    commandName: Sub Menu
+    customProperties: null
+    displayName: Sub Menu
+    path: bundle.rb
+    scope: null
+  commandName: Miva
+  customProperties: null
+  displayName: Miva
+  path: bundle.rb
+  scope: null
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: Sample File Template
+  filetype: '*.txt'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates\templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.ProjectTemplateElement
+  customProperties: {replace_parameters: true}
+  description: A basic template which includes only a default index.html file
+  displayName: Sample Project Template
+  icon: null
+  id: Sample Project Template
+  location: templates/sample_project_template.zip
+  path: templates\templates.rb
+  priority: 0
+  scope: null
+  tags: *id001
+  type: WEB
+- !!com.aptana.scripting.model.ProjectSampleElement
+  category: com.aptana.projects.samples.web.category
+  customProperties: null
+  description: A basic project sample
+  displayName: Project Sample Example
+  icon: {}
+  id: sample.local
+  location: samples/local_sample.zip
+  natures: [com.aptana.projects.webnature]
+  path: samples\project_samples.rb
+  scope: null
+- !!com.aptana.scripting.model.SnippetCategoryElement {customProperties: null, displayName: 0 - Jiva,
+  iconPath: icons/jiva.png, path: snippets\snippets.rb, scope: null}
+- !!com.aptana.scripting.model.SnippetCategoryElement {customProperties: null, displayName: 0 - Miva,
+  iconPath: icons/miva.png, path: snippets\snippets.rb, scope: null}
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: 0 - Jiva
+  customProperties:
+    prefix_values: [foo]
+  description: null
+  displayName: Query
+  expansion: '<mvassign name="l.vr:vr" value="{l.vars}">
+
+    <mvassign name="l.vr:query" value="{''SELECT * FROM \`${1:table}\` WHERE Actif
+    = 1''}">
+
+    <mvassign name="l.vr:table" value="{''${1:table}''}">
+
+    <mvassign name="l.rdata" value="{GetData(l.vr)}">'
+  iconPath: icons/jv_query.png
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: 0 - Miva
+  customProperties:
+    prefix_values: [foo]
+  description: null
+  displayName: MvFunction
+  expansion: "<mvfunction name=\"${1:name}\" parameters=\"${2:var}\" standardoutputlevel=\"\
+    compresswhitespace\">\n\t\n\t\n\t\n<mvfuncreturn value=\"{l.ret}\">\n</mvfunction>"
+  iconPath: icons/function.png
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: 0 - Miva
+  customProperties:
+    prefix_values: [foo]
+  description: null
+  displayName: MvEval
+  expansion: <mveval expr="{${1:expr}}">
+  iconPath: icons/eval.png
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: 0 - Miva
+  customProperties:
+    prefix_values: [foo]
+  description: null
+  displayName: MvAssign
+  expansion: <mvassign name="${1:name}" value="{${2:expr}}">
+  iconPath: icons/assign.png
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: 0 - Miva
+  customProperties:
+    prefix_values: [foo]
+  description: null
+  displayName: MvIf
+  expansion: "<mvif expr=\"{${1:expr}}\">\n\t${2:val}\n</mvif>"
+  iconPath: icons/if.png
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: 0 - Miva
+  customProperties:
+    prefix_values: [foo]
+  description: null
+  displayName: MvWhile
+  expansion: "<mvwhile expr=\"{${1:expr}}\">\n\t${2:val}\n</mvwhile>"
+  iconPath: icons/while.png
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: 0 - Miva
+  customProperties:
+    prefix_values: [foo]
+  description: null
+  displayName: MvComment
+  expansion: "<mvcomment>\n\t${1:expr}\n</mvcomment>"
+  iconPath: icons/comment.png
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: 0 - Miva
+  customProperties:
+    prefix_values: [foo]
+  description: null
+  displayName: MvElse
+  expansion: "<mvelse>\n\t"
+  iconPath: icons/else.png
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: 0 - Miva
+  customProperties:
+    prefix_values: [foo]
+  description: null
+  displayName: MvElseIf
+  expansion: "<mvelseif expr=\"{${1:expr}}\">\n\t"
+  iconPath: icons/elseif.png
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: 0 - Miva
+  customProperties:
+    prefix_values: [foo]
+  description: null
+  displayName: MvCapture
+  expansion: "<mvcapture variable=\"{${1:expr}}\">${2:val}</mvcapture>\n\t"
+  iconPath: icons/elseif.png
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Swap Case
+  input: [selection, word]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: replace_selection
+  path: commands\commands.rb
+  runType: current_thread
+  scope: source
+  workingDirectoryType: UNDEFINED
+copyright: '(c) Copyright 2014 mivascript.org. Distributed under MIT license.
+
+  '
+customProperties: null
+decreaseIndentMarkers: &id002 {}
+description: 'Sample description
+
+  '
+displayName: Miva
+fileTypeRegistry: *id002
+fileTypes: *id001
+foldingStartMarkers: *id002
+foldingStopMarkers: *id002
+increaseIndentMarkers: *id002
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: null
+visible: true
