@@ -1,0 +1,4 @@
+Sample Variables:
+* \sample_file_template: The file name, without the file-extension
+* \C:UsersClaudiuMy DocumentsAptana Studio 3 Workspacemiva.rubletemplatessample_file_template.txt: The absolute path to the current file
+* \C:UsersClaudiuMy DocumentsAptana Studio 3 Workspacemiva.rubletemplates: The directory path for the current file
