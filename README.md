@@ -15,8 +15,8 @@ Miva Script snippets for Aptana
  
  	Prerequisites : Have your own GitHub account
  	
- 	a) File - Import - Git Repository as a new project
- 	b) Add your GIT account informations 
- 	c) Use the following uri: https://github.com/deviant-emma/Miva-Script-Snippets-for-Aptana.git
+ 	1. File - Import - Git Repository as a new project
+ 	2. Add your GIT account informations 
+ 	3. Use the following uri: https://github.com/deviant-emma/Miva-Script-Snippets-for-Aptana.git
  	
 More info about creating snippets : https://wiki.appcelerator.org/display/guides2/Creating+a+new+snippet
